@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l2k-Bh-qfn">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Numbers-->
+        <scene sceneID="vUK-d0-qlH">
+            <objects>
+                <viewController id="g8S-kL-fdy" customClass="NumbersViewController" customModule="Ejercicio1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ryq-hs-LRI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ej. 1,2,3,4,5" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ahS-bN-wYF">
+                                <rect key="frame" x="16" y="169.5" width="251" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="alert"/>
+                                <connections>
+                                    <action selector="textValueChanged:" destination="g8S-kL-fdy" eventType="editingChanged" id="wI1-6M-nGa"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ordenamiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zb-KB-4xW">
+                                <rect key="frame" x="53" y="49" width="214" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Números ordenados:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOU-Nr-Sh7">
+                                <rect key="frame" x="16" y="274" width="161" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OSx-zR-D1b">
+                                <rect key="frame" x="16" y="303" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i0-Oi-F1C">
+                                <rect key="frame" x="275" y="174" width="29" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="29N-NL-6NU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa números separados por una coma." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-EX-F8G">
+                                <rect key="frame" x="16" y="128" width="288" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ahS-bN-wYF" firstAttribute="top" secondItem="aDZ-EX-F8G" secondAttribute="bottom" constant="8" id="1cG-FW-fyy"/>
+                            <constraint firstItem="aDZ-EX-F8G" firstAttribute="leading" secondItem="KZA-NU-1ZI" secondAttribute="leading" constant="16" id="2wg-bR-pVl"/>
+                            <constraint firstItem="XOU-Nr-Sh7" firstAttribute="top" secondItem="ahS-bN-wYF" secondAttribute="bottom" constant="74.5" id="46u-or-jPC"/>
+                            <constraint firstItem="KZA-NU-1ZI" firstAttribute="trailing" secondItem="aDZ-EX-F8G" secondAttribute="trailing" constant="16" id="4UA-uU-gLY"/>
+                            <constraint firstItem="XOU-Nr-Sh7" firstAttribute="leading" secondItem="KZA-NU-1ZI" secondAttribute="leading" constant="16" id="7SF-4J-Jfr"/>
+                            <constraint firstItem="8i0-Oi-F1C" firstAttribute="top" secondItem="aDZ-EX-F8G" secondAttribute="bottom" constant="12.5" id="ED4-Aw-UA4"/>
+                            <constraint firstItem="KZA-NU-1ZI" firstAttribute="trailing" secondItem="8i0-Oi-F1C" secondAttribute="trailing" constant="16" id="RJF-eQ-Vbj"/>
+                            <constraint firstItem="OSx-zR-D1b" firstAttribute="leading" secondItem="KZA-NU-1ZI" secondAttribute="leading" constant="16" id="TBr-J6-2TX"/>
+                            <constraint firstItem="3Zb-KB-4xW" firstAttribute="top" secondItem="KZA-NU-1ZI" secondAttribute="top" constant="29" id="XFS-Dk-b1K"/>
+                            <constraint firstItem="ahS-bN-wYF" firstAttribute="leading" secondItem="KZA-NU-1ZI" secondAttribute="leading" constant="16" id="jUC-6o-2ia"/>
+                            <constraint firstItem="8i0-Oi-F1C" firstAttribute="leading" secondItem="ahS-bN-wYF" secondAttribute="trailing" constant="8" id="joQ-b4-ZOf"/>
+                            <constraint firstItem="KZA-NU-1ZI" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XOU-Nr-Sh7" secondAttribute="trailing" symbolic="YES" id="nwR-Vk-8yP"/>
+                            <constraint firstItem="aDZ-EX-F8G" firstAttribute="top" secondItem="3Zb-KB-4xW" secondAttribute="bottom" constant="37" id="pkq-UJ-qdr"/>
+                            <constraint firstItem="3Zb-KB-4xW" firstAttribute="centerX" secondItem="KZA-NU-1ZI" secondAttribute="centerX" id="v16-pS-daF"/>
+                            <constraint firstItem="OSx-zR-D1b" firstAttribute="top" secondItem="XOU-Nr-Sh7" secondAttribute="bottom" constant="8" id="v6D-Cq-t4Z"/>
+                            <constraint firstItem="KZA-NU-1ZI" firstAttribute="trailing" secondItem="ahS-bN-wYF" secondAttribute="trailing" constant="53" id="yBk-Mk-Fub"/>
+                            <constraint firstItem="KZA-NU-1ZI" firstAttribute="trailing" secondItem="OSx-zR-D1b" secondAttribute="trailing" constant="16" id="yOE-XV-Ikk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KZA-NU-1ZI"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Numbers" image="icons8-numeric-30.png" id="Tkp-VH-dSO"/>
+                    <connections>
+                        <outlet property="numbersTextField" destination="ahS-bN-wYF" id="Hqi-Nm-QND"/>
+                        <outlet property="orderedNumbersLabel" destination="OSx-zR-D1b" id="C4T-ms-apC"/>
+                        <outlet property="stringValidationLabel" destination="8i0-Oi-F1C" id="zTg-wl-5va"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HnV-3R-LAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988.125" y="-284.15492957746477"/>
+        </scene>
+        <!--Dice-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ejercicio1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dice" image="icons8-dice-26.png" id="2au-xr-CMc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989.60000000000002" y="438.53073463268368"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="HPz-sj-PdF">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="l2k-Bh-qfn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dqq-kl-Hgs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="npN-a0-M53"/>
+                        <segue destination="g8S-kL-fdy" kind="relationship" relationship="viewControllers" id="Dy9-K4-mhP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nr3-xH-Ckm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-dice-26.png" width="26" height="26"/>
+        <image name="icons8-numeric-30.png" width="30" height="30"/>
+    </resources>
+</document>
